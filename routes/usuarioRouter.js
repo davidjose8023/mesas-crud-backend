@@ -11,8 +11,8 @@ api.post('/register', UserController.saveUser);
 api.post('/login', UserController.loginUser);
 api.get('/user/:id',  UserController.getUser);
 api.get('/users/',  UserController.getUsers);
-api.put('/update-user/:id', UserController.updateUser);
-api.delete('/delete-user/:id', UserController.deleteUser);
+api.put('/update-user/:id',mdAutenticacion.verificaToken, UserController.updateUser);
+api.delete('/delete-user/:id',mdAutenticacion.verificaToken, UserController.deleteUser);
 api.get('/renuevatoken',mdAutenticacion.verificaToken, UserController.renuevaToken);
 api.get('/',  UserController.prueba);
 
