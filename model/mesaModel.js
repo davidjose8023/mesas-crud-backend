@@ -10,7 +10,7 @@ const mesaSchema = new Schema(
         usuario: {	
             type: Schema.Types.ObjectId,	
             ref: 'Usuario',	
-            required:  [true,	'El	id	usuario es	un campo obligatorio hola mundo'],
+            required:  [true,	'El	id	usuario es	un campo obligatorio hola mundo 2222'],
             date: Date
         }
         
